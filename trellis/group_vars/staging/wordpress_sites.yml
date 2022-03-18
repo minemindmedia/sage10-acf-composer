@@ -1,0 +1,20 @@
+# Created by trellis-cli v1.0.0
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+
+wordpress_sites:
+  sageacfc.com:
+    site_hosts:
+    - canonical: sageacfc.com
+      redirects:
+      - www.sageacfc.com
+    local_path: ../site
+    branch: master
+    repo: git@github.com:example/example.com.git
+    repo_subtree_path: site
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: letsencrypt
+    cache:
+      enabled: false
